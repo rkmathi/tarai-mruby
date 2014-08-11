@@ -1,0 +1,9 @@
+Settings
+
+...
+  # Use mrbgems
+  conf.gem 'mrbgems/ruby_extension_tarai'
+  conf.gem 'mrbgems/c_extension_tarai' do |g|
+    g.cc.flags << '-g' # append cflags in this gem
+  end
+...
